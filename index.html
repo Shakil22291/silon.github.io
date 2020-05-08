@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <!--GOOGLE FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--VENDORS FILES-->
+    <link rel="stylesheet" href="vendors/css/uikit.min.css" />
+    <link rel="stylesheet" href="vendors/css/grid.css" />
+    <!--RESOURCES FILES-->
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/responsive.css" />
+    <title>Silon</title>
+  </head>
+  <body>
+    <!--NAVIGATION-->
+    <nav
+      uk-sticky="top: 100; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up"
+    >
+      <div class="logo">
+        <a href="#home">
+          <img src="resources/img/logo.png" alt="Silon." />
+        </a>
+      </div>
+
+      <ul class="main-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#product-section">Prouct</a></li>
+        <li><a href="#">Brand</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <div class="icon-list">
+        <div class="shop">
+          <a href="#" class="notification">
+            <span><i class="fas fa-shopping-cart"></i></span>
+            <span class="badge">0</span>
+          </a>
+        </div>
+        <div>
+          <a href="#" class="notification">
+            <span><i class="far fa-heart"></i></span>
+            <span class="badge">3</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="burger" onclick="myFunction(this)">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+      </div>
+    </nav>
+
+    <!--BANNER SECTION-->
+    <header id="home">
+      <div class="row">
+        <div class="flex-box ban">
+          <div class="flex-1">
+            <div class="banner-box">
+              <h4>ultimate collection</h4>
+              <h1>Complete Women Fashion Here</h1>
+
+              <button class="btn btn-head">Shop Now</button>
+            </div>
+          </div>
+          <div class="flex-2">
+            <img src="resources/img/ban-1.png" alt="hello" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--PRODUCT SECTION-->
+    <section id="product-section">
+      <div class="row">
+        <h2>Featured product</h2>
+      </div>
+      <div class="row">
+        <div class="col span_1_of_3">
+          <div
+            id="cool1"
+            class="cart"
+            onmouseover="animated1(this)"
+            onmouseout="removeFunction1(this)"
+          >
+            <img src="resources/img/1.jpg" alt="" />
+            <ul class="p-icon">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+        <div class="col span_1_of_3">
+          <div
+            id="cool2"
+            class="cart"
+            onmouseover="animated2(this)"
+            onmouseout="removeFunction2(this)"
+          >
+            <img src="resources/img/3.jpg" alt="" />
+            <ul class="p-icon">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_3">
+          <div
+            id="cool3"
+            class="cart"
+            onmouseover="animated3(this)"
+            onmouseout="removeFunction3(this)"
+          >
+            <img src="resources/img/2.jpg" alt="" />
+            <ul class="p-icon">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--DISCOUNT SECTION-->
+    <section id="discount" class="clearfix">
+      <div class="row">
+        <div class="flex-box ban">
+          <div class="col span_1_of_2">
+            <h1>50% off</h1>
+            <h2>all women’s collection</h2>
+
+            <button class="btn">Shop Now</button>
+          </div>
+          <div class="col span_1_of_2">
+            <img src="resources/img/ban-2.png" alt="ban2" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--POPOLAR SECTION-->
+    <section id="popular">
+      <div class="row">
+        <h2>Most popular</h2>
+      </div>
+      <div class="row cart-small">
+        <div class="col span_1_of_4">
+          <div
+            id="cool4"
+            class="cart"
+            onmouseover="animated4(this)"
+            onmouseout="removeFunction4(this)"
+          >
+            <img src="resources/img/4.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+        <div class="col span_1_of_4">
+          <div
+            id="cool5"
+            class="cart"
+            onmouseover="animated5(this)"
+            onmouseout="removeFunction5(this)"
+          >
+            <img src="resources/img/5.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_4">
+          <div
+            id="cool6"
+            class="cart"
+            onmouseover="animated6(this)"
+            onmouseout="removeFunction6(this)"
+          >
+            <img src="resources/img/6.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_4">
+          <div
+            id="cool7"
+            class="cart"
+            onmouseover="animated7(this)"
+            onmouseout="removeFunction7(this)"
+          >
+            <img src="resources/img/7.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--SERVICES SECTION-->
+    <section id="services">
+      <div class="row">
+        <div class="col span_1_of_4">
+          <div class="s-card">
+            <img src="resources/img/services-1.png" alt="gari" />
+            <h4>Money back gurantee</h4>
+            <p>great fill signs he evening</p>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="s-card">
+            <img src="resources/img/services-2.png" alt="gari" />
+            <h4>Free Delivery</h4>
+            <p>great fill signs he evening</p>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="s-card">
+            <img src="resources/img/services-4.png" alt="gari" />
+            <h4>Always support</h4>
+            <p>great fill signs he evening</p>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="s-card">
+            <img
+              src="resources/img/Silon - ecommerce template.png"
+              alt="gari"
+            />
+            <h4>Secure Payment</h4>
+            <p>great fill signs he evening</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--TRENDING SECTION-->
+    <section id="trending">
+      <div class="row">
+        <h2>Trending Products</h2>
+      </div>
+      <div class="row cart-small">
+        <div class="col span_1_of_4">
+          <div
+            id="cool8"
+            class="cart"
+            onmouseover="animated8(this)"
+            onmouseout="removeFunction8(this)"
+          >
+            <img src="resources/img/8.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+        <div class="col span_1_of_4">
+          <div
+            id="cool9"
+            class="cart"
+            onmouseover="animated9(this)"
+            onmouseout="removeFunction9(this)"
+          >
+            <img src="resources/img/9.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_4">
+          <div
+            id="cool10"
+            class="cart"
+            onmouseover="animated10(this)"
+            onmouseout="removeFunction10(this)"
+          >
+            <img src="resources/img/10.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_4">
+          <div
+            id="cool11"
+            class="cart"
+            onmouseover="animated11(this)"
+            onmouseout="removeFunction11(this)"
+          >
+            <img src="resources/img/11.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+      </div>
+
+      <div class="row cart-small">
+        <div class="col span_1_of_4">
+          <div
+            id="cool12"
+            class="cart"
+            onmouseover="animated12(this)"
+            onmouseout="removeFunction12(this)"
+          >
+            <img src="resources/img/12.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+        <div class="col span_1_of_4">
+          <div
+            id="cool13"
+            class="cart"
+            onmouseover="animated13(this)"
+            onmouseout="removeFunction13(this)"
+          >
+            <img src="resources/img/13.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_4">
+          <div
+            id="cool14"
+            class="cart"
+            onmouseover="animated14(this)"
+            onmouseout="removeFunction14(this)"
+          >
+            <img src="resources/img/14.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+
+        <div class="col span_1_of_4">
+          <div
+            id="cool15"
+            class="cart"
+            onmouseover="animated15(this)"
+            onmouseout="removeFunction15(this)"
+          >
+            <img src="resources/img/15.jpg" alt="" />
+            <ul class="p-icon p-small">
+              <li class="icon-1"><i class="far fa-eye"></i></li>
+              <li class="icon-2"><i class="fas fa-shopping-cart"></i></li>
+              <li class="icon-3"><i class="far fa-heart"></i></li>
+            </ul>
+          </div>
+          <p class="little-description">Red Women Purses</p>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <span><i class="fas fa-star"></i></span>
+          <h3>$35.00</h3>
+        </div>
+      </div>
+    </section>
+
+    <!--JOURNAL SECTION-->
+    <section id="journal">
+      <div class="row">
+        <div class="col span_1_of_3">
+          <img src="resources/img/1 (1).jpg" alt="image" />
+          <p class="light">07 July, 2019</p>
+          <h3>Were divided land his creature which have evening subdue</h3>
+          <hr />
+          <div class="comments">
+            <p class="light">
+              <span><i class="fab fa-angellist"></i></span>Women Fassion
+            </p>
+            <p class="light">
+              <span><i class="far fa-comment-alt"></i></span>Comments
+            </p>
+          </div>
+        </div>
+        <div class="col span_1_of_3">
+          <img src="resources/img/2 (1).jpg" alt="image" />
+          <p class="light">07 July, 2019</p>
+          <h3>Were divided land his creature which have evening subdue</h3>
+          <hr />
+          <div class="comments">
+            <p class="light">
+              <span><i class="fab fa-angellist"></i></span>Women Fassion
+            </p>
+            <p class="light">
+              <span><i class="far fa-comment-alt"></i></span>Comments
+            </p>
+          </div>
+        </div>
+        <div class="col span_1_of_3">
+          <img src="resources/img/3 (1).jpg" alt="image" />
+          <p class="light">07 July, 2019</p>
+          <h3>Were divided land his creature which have evening subdue</h3>
+          <hr />
+          <div class="comments">
+            <p class="light">
+              <span><i class="fab fa-angellist"></i></span>Women Fassion
+            </p>
+            <p class="light">
+              <span><i class="far fa-comment-alt"></i></span>Comments
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOLLOW US SECTION-->
+    <section id="follow">
+      <div class="row">
+        <h2>follow us</h2>
+      </div>
+      <div class="row">
+        <div class="col span_1_of_4">
+          <div class="overlay">
+            <img
+              src="resources/img/follow-1.jpg"
+              alt="image"
+              class="overlay-image"
+            />
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="overlay">
+            <img
+              src="resources/img/follow-2.jpg"
+              alt="image"
+              class="overlay-image"
+            />
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="overlay">
+            <img
+              src="resources/img/follow-3.jpg"
+              alt="image"
+              class="overlay-image"
+            />
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col span_1_of_4">
+          <div class="overlay">
+            <img
+              src="resources/img/follow-4.jpg"
+              alt="image"
+              class="overlay-image"
+            />
+            <div class="overlay-content">
+              <div class="overlay-text">
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER SECTION-->
+    <footer id="footer-section">
+      <div class="row">
+        <div class="col span_1_of_4">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">who are we</a></li>
+            <li><a href="#">work with us</a></li>
+            <li><a href="#">become a supplier</a></li>
+            <li><a href="#">Investor relations</a></li>
+            <li><a href="#">Our devise</a></li>
+            <li><a href="#">Affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="col span_1_of_4">
+          <h4>Usefull Links</h4>
+          <ul>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Common FAQ</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Return policy</a></li>
+            <li><a href="#">Cancellation</a></li>
+            <li><a href="#">Track orders</a></li>
+          </ul>
+        </div>
+        <div class="col span_1_of_4">
+          <h4>Online Shoping</h4>
+          <ul>
+            <li><a href="#">Men shopping</a></li>
+            <li><a href="#">Women shopping</a></li>
+            <li><a href="#">Gift cards</a></li>
+            <li><a href="#">Home $ living</a></li>
+            <li><a href="#">Our devise</a></li>
+            <li><a href="#">Electronics</a></li>
+          </ul>
+        </div>
+        <div class="col span_1_of_4">
+          <h4>experience app on mobile</h4>
+          <div class="btn-group">
+            <a href="#" class="btn-footer">
+              <div><i class="fab fa-android"></i></div>
+              <div class="btn-text">
+                GET IN ON <br /><span>GOOGLE PLAY</span>
+              </div>
+            </a>
+            <a href="#" class="btn-footer">
+              <div><i class="fab fa-apple"></i></div>
+              <div class="btn-text">
+                GET IN ON <br /><span>GOOGLE PLAY</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--JS SCRIPTS-->
+    <!--   <script src="vendors/js/uikit-icons.min.js"></script> -->
+    <script src="vendors/js/uikit.min.js"></script>
+    <script src="resources/js/main.js"></script>
+  </body>
+</html>
